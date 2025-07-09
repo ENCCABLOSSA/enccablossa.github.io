@@ -1,0 +1,23 @@
+body{ background-color: rgba(39, 63, 56, 0.767);
+
+}
+h1{color: rgb(235, 35, 35);
+    background-color: blue;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{color: aqua;
+
+}
+.secundaria{color: rgb(226, 43, 104);
+font-family: Arial, Helvetica, sans-serif;
+}
+.secundaria2{color: rgb(226, 131, 43);
+
+}
+.secundaria3{color: rgb(226, 43, 113);
+
+}
+#parrafo1index{color: rgb(33, 177, 20);
+
+}

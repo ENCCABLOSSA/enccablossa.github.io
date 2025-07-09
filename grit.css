@@ -1,0 +1,12 @@
+.contenedorx{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+
+
+}
+
+.item{
+background-color: blueviolet;
+
+}
