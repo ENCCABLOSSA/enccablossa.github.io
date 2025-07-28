@@ -1,0 +1,60 @@
+<!-- Comentarios -->
+<section class="container comentarios my-5" id="comentario-section">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <div class="card shadow">
+        <div class="card-header bg-secondary text-white">
+          <h3 class="h5 mb-0 text-center">Escribe tu información para realizar la entrega</h3>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre completo">
+          </div>
+          <div class="mb-3">
+            <label for="contacto" class="form-label">Teléfono de contacto:</label>
+            <input type="tel" class="form-control" id="contacto" placeholder="Ej: 3144851978">
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Dirección de entrega">
+          </div>
+          <div class="mb-3 text-muted small text-center">
+            La información suministrada está protegida y será usada exclusivamente para la entrega del producto.
+          </div>
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario:</label>
+            <textarea id="comentario" class="form-control" placeholder="Escribe tu opinión... (opcional)"></textarea>
+          </div>
+          <button class="btn btn-primary w-100" onclick="enviarComentario()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function enviarComentario() {
+    const nombre = document.getElementById('nombre').value.trim();
+    const contacto = document.getElementById('contacto').value.trim();
+    const direccion = document.getElementById('direccion').value.trim();
+    const comentario = document.getElementById('comentario').value.trim();
+
+    if (!nombre || !contacto || !direccion) {
+      alert('Por favor completa todos los campos obligatorios: nombre, contacto y dirección.');
+      return;
+    }
+
+    // Aquí iría el envío real del formulario (con backend o servicio externo)
+    alert('¡Gracias por tu información! Tu solicitud ha sido registrada con éxito.');
+
+    // Limpia los campos si deseas
+    document.getElementById('nombre').value = '';
+    document.getElementById('contacto').value = '';
+    document.getElementById('direccion').value = '';
+    document.getElementById('comentario').value = '';
+
+    // Opcional: regresar al inicio
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>

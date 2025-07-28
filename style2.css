@@ -1,0 +1,10 @@
+.navbar-nav .nav-link.nav-custom {
+  font-size: 1.3rem; /* Aumenta tamaño del texto */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+.navbar-nav {
+  justify-content: center; /* Centra horizontalmente el grupo de links */
+}

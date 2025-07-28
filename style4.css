@@ -1,0 +1,4 @@
+ function mover(direccion) {
+      index = (index + direccion + total) % total;
+      galeria.style.transform = `translateX(-${index * 100}%)`;
+    }

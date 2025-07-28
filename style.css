@@ -1,0 +1,50 @@
+ body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #00b894, #2d3436);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Luxurious Roman", serif;
+}
+
+.navbar {
+  background-color: #2d3436;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #2d3436;
+  color: white;
+  padding: 1rem 0;
+}
+
+.iconos-redes a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.iconos-redes a:hover {
+  transform: scale(1.2);
+}
+
+
+
+    
